@@ -14,20 +14,19 @@ class calculator{
         switch(i){
             case 1: 
                 result = a+b;
-                System.out.println("Sum:" + result);
                 break;
             case 2:
                 result = a-b;
-                System.out.println("Subtration:" + result);
                 break;
             case 3:
                 result = a*b;
-                System.out.println("Product:" + result);
                 break;
             case 4:
                 result = a/b;
-                System.out.println("Division:" + result);
                 break;
+            default:
+                return;
         }
+        System.out.println("Result :" + result);
     }
 }
