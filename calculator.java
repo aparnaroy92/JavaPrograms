@@ -2,10 +2,10 @@ import java.util.Scanner;
 class calculator{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int result;
+        int result =0;
         System.out.println("Calculator");
         System.out.println("Enter your choice :");
-        System.out.println("1.Add\n2.Subtract\n3.Multiply\n4.Divide");
+        System.out.println("1.Add\n2.Subtract\n3.Multiply\n4.Divide\n5.Exit");
         int i = sc.nextInt();
         System.out.println("Enter the 1st number:");
         int a =sc.nextInt();
@@ -22,7 +22,11 @@ class calculator{
                 result = a*b;
                 break;
             case 4:
-                result = a/b;
+                try {result = a/b;}
+                catch(Exception e) {System.out.println("Invalid Denominator\n");}
+                break;
+            case 5:
+                System.out.println("Thankyou!");
                 break;
             default:
                 return;
