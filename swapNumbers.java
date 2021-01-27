@@ -11,6 +11,5 @@ public class swapNumbers {
         System.out.println("After swapping :");
         System.out.println("x="+x);
         System.out.println("y="+y);
-        
     }
 }
